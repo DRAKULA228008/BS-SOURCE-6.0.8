@@ -1,0 +1,337 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1016304336090636}
+  m_IsPrefabParent: 1
+--- !u!1 &1016304336090636
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4148536107442956}
+  - component: {fileID: 114711004762128553}
+  - component: {fileID: 114058791883912543}
+  - component: {fileID: 114185904224239661}
+  m_Layer: 0
+  m_Name: HammerTPS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4148536107442956
+Transform:
+  m_GameObject: {fileID: 1016304336090636}
+  m_LocalRotation: {x: 0.03723183, y: 0.3371232, z: 0.0371807, w: 0.939989}
+  m_LocalPosition: {x: 0.266, y: 0.148, z: -0.162}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4145753555626912}
+  - {fileID: 4160927142155956}
+  - {fileID: 4973470914981067}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 7.038797, y: -39.12509, z: -7.03421}
+--- !u!114 &114711004762128553
+MonoBehaviour:
+  m_GameObject: {fileID: 1016304336090636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deb37702473004d46bd8912dbc7a467a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Data:
+    weapon: 0
+    skin: 0
+    stickers:
+    firestat: 0
+  WeaponAtlas:
+  - {fileID: 114858269683570018}
+  - {fileID: 114102124614029024}
+  Muzzle:
+    enabled: 1
+    transform: {fileID: 4973470914981067}
+    meshRenderer: {fileID: 23293737699804191}
+  DefaultPosition: {x: 0.266, y: 0.148, z: -0.162}
+  DefaultRotation: {x: 0.03723183, y: 0.3371232, z: 0.0371807, w: 0.939989}
+  FireStat:
+    enabled: 0
+    target: {fileID: 0}
+    counters: []
+    value: 0
+  Stickers: []
+  DoubleWeapon:
+    enabled: 0
+    leftWeapon: {fileID: 0}
+    rightMuzzle:
+      enabled: 1
+      transform: {fileID: 0}
+      meshRenderer: {fileID: 0}
+    leftMuzzle:
+      enabled: 1
+      transform: {fileID: 0}
+      meshRenderer: {fileID: 0}
+    leftWeaponPosition: {x: 0, y: 0, z: 0}
+    leftWeaponRotation: {x: 0, y: 0, z: 0}
+    toogle: 0
+  Sound: 1
+  Timer: {fileID: 114185904224239661}
+--- !u!114 &114058791883912543
+MonoBehaviour:
+  m_GameObject: {fileID: 1016304336090636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a65ab83b5134435428a4ced3079c37e2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  isEditor: 0
+  Originals:
+  - {fileID: 23316509304842637}
+  LODs:
+  - {fileID: 23305963712677424}
+  Timer: {fileID: 114185904224239661}
+--- !u!114 &114185904224239661
+MonoBehaviour:
+  m_GameObject: {fileID: 1016304336090636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e492bc1877955c4988fae5fb89bbc41, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!1 &1316799195389922
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4145753555626912}
+  - component: {fileID: 33652122955443746}
+  - component: {fileID: 23316509304842637}
+  - component: {fileID: 114858269683570018}
+  m_Layer: 0
+  m_Name: Hammer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4145753555626912
+Transform:
+  m_GameObject: {fileID: 1316799195389922}
+  m_LocalRotation: {x: -0.4995607, y: -0.4977052, z: -0.5017948, w: 0.5009298}
+  m_LocalPosition: {x: -0.2539047, y: 0.05599936, z: 0.013191}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4148536107442956}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -10.36325, y: 89.68213, z: 79.79272}
+--- !u!33 &33652122955443746
+MeshFilter:
+  m_GameObject: {fileID: 1316799195389922}
+  m_Mesh: {fileID: 0}
+--- !u!23 &23316509304842637
+MeshRenderer:
+  m_GameObject: {fileID: 1316799195389922}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 4d03f6c7e05f64142b2a3f3b2a981133, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!114 &114858269683570018
+MonoBehaviour:
+  m_GameObject: {fileID: 1316799195389922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d41e57bd587c8746a274b29fe6dd1f8, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  originalMesh: {fileID: 4300000, guid: 5e9d450261617544bb5d9440fb6a7ab6, type: 2}
+  mScale: {x: 1, y: 1, z: 1}
+  mPivot: {x: 0, y: 0, z: 0}
+  mSpriteSize:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  mMirrorX: 0
+  mMirrorY: 0
+  mMirrorZ: 0
+  mFlip: 0
+  mColor: {r: 1, g: 1, b: 1, a: 1}
+  originalMaterial: {fileID: 2100000, guid: 4d03f6c7e05f64142b2a3f3b2a981133, type: 2}
+  atlasMaterial: {fileID: 2100000, guid: 4d03f6c7e05f64142b2a3f3b2a981133, type: 2}
+  mAtlas: {fileID: 114035519202120638, guid: 64518b0056fc1ba4ea940ebec7127d94, type: 2}
+  mSpriteName: 43-0
+--- !u!1 &1088927766156775
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4160927142155956}
+  - component: {fileID: 33556892606003419}
+  - component: {fileID: 23305963712677424}
+  - component: {fileID: 114102124614029024}
+  m_Layer: 0
+  m_Name: LOD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4160927142155956
+Transform:
+  m_GameObject: {fileID: 1088927766156775}
+  m_LocalRotation: {x: -0.7080653, y: -0.7061416, z: -0.001579636, w: 0.002280246}
+  m_LocalPosition: {x: -0.2539047, y: 0.05599936, z: 0.013191}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4148536107442956}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -179.9428, y: 0.3126832, z: -89.84397}
+--- !u!33 &33556892606003419
+MeshFilter:
+  m_GameObject: {fileID: 1088927766156775}
+  m_Mesh: {fileID: 0}
+--- !u!23 &23305963712677424
+MeshRenderer:
+  m_GameObject: {fileID: 1088927766156775}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: ea28dd229429aab46b1ac11c2267bccc, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!114 &114102124614029024
+MonoBehaviour:
+  m_GameObject: {fileID: 1088927766156775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d41e57bd587c8746a274b29fe6dd1f8, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  originalMesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  mScale: {x: 0.54, y: 0.23, z: 1}
+  mPivot: {x: 0, y: 0, z: 0}
+  mSpriteSize:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  mMirrorX: 0
+  mMirrorY: 0
+  mMirrorZ: 0
+  mFlip: 0
+  mColor: {r: 1, g: 1, b: 1, a: 1}
+  originalMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  atlasMaterial: {fileID: 2100000, guid: ea28dd229429aab46b1ac11c2267bccc, type: 2}
+  mAtlas: {fileID: 114452273411760649, guid: 59fedd322f6985e49b634fc0000db899, type: 2}
+  mSpriteName: 43-0
+--- !u!1 &1485201424234972
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4973470914981067}
+  - component: {fileID: 33813436342563098}
+  - component: {fileID: 23293737699804191}
+  m_Layer: 0
+  m_Name: MuzzleFlashKnife
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4973470914981067
+Transform:
+  m_GameObject: {fileID: 1485201424234972}
+  m_LocalRotation: {x: 0.9999952, y: -0.001360249, z: -0.0004952556, w: -0.002729309}
+  m_LocalPosition: {x: 0.2499979, y: 0.01963028, z: 0.01249702}
+  m_LocalScale: {x: 1, y: 0.9999999, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4148536107442956}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -179.6873, y: -0.05717727, z: 0.1557177}
+--- !u!33 &33813436342563098
+MeshFilter:
+  m_GameObject: {fileID: 1485201424234972}
+  m_Mesh: {fileID: 4300000, guid: 236cfa2b7b7b1844eae65e0cc8454d7a, type: 2}
+--- !u!23 &23293737699804191
+MeshRenderer:
+  m_GameObject: {fileID: 1485201424234972}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 3ea9b7a1cc04e8f458bd231f5f07a0a8, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0

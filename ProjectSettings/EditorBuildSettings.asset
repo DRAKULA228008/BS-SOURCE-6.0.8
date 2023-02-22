@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Menu/Logo.unity
+    guid: 5c5e48c4f561b1b4e9b345b26185b622
+  - enabled: 1
+    path: Assets/Menu/Awake.unity
+    guid: e6f6b25696216bd418dfbe6bcc0bf46f
+  - enabled: 1
+    path: Assets/Menu/GDPR.unity
+    guid: 6310f955c6106d140affba10e84cb9b6
+  - enabled: 1
+    path: Assets/Menu/Menu.unity
+    guid: 028bd3273cf95e5489772bc2bc4c83b1
+  - enabled: 1
+    path: Assets/Levels/Dust.unity
+    guid: 025c20f2e03dee24cadde16787f571aa
+  - enabled: 1
+    path: Assets/Levels/Shooting Range.unity
+    guid: b34e10f8aceee5f4ab1820c4a6edee0f
+  - enabled: 1
+    path: Assets/Levels/Rast.unity
+    guid: dea5003f87ca1f241bfb15d281994265
+  - enabled: 1
+    path: Assets/Levels/Speed.unity
+    guid: fbb676f555522694191adeb703c3a187
+  - enabled: 1
+    path: Assets/Levels/Meeting.unity
+    guid: 0f72e68cb3a54bd49bd9ee8e56a891af
+  - enabled: 1
+    path: Assets/Levels/Aim.unity
+    guid: c02a2641dfb490646a4ebb0a62d47d00
+  m_configObjects: {}

@@ -1,0 +1,1355 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OPS.Assets.Editor</name>
+    </assembly>
+    <members>
+        <member name="T:OPS.Assets.Editor.Files.AssetsFiles.AssetsFile">
+            <summary>
+            Represents an .assets file.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.AssetsFile.AssetsFileHeader">
+            <summary>
+            The header of the assets file.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.AssetsFile.Version">
+            <summary>
+            The version is inside the header.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.AssetsFile.AssetsFileMetadata">
+            <summary>
+            The metadata of the assets file.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.AssetsFile.Objects">
+            <summary>
+            The unity objects inside the assets file.
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.AssetsFile.#ctor(OPS.Assets.Editor.Files.UnityFileReader)">
+            <summary>
+            Read the bundle file data from the _Reader.
+            </summary>
+            <param name="_Reader"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.AssetsFile.GetObjects``1">
+            <summary>
+            Return a list of objects int the asset file of type TObject.
+            </summary>
+            <typeparam name="TObject"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.AssetsFile.Write(OPS.Assets.Editor.Files.UnityFileWriter)">
+            <summary>
+            Write the assets file.
+            </summary>
+            <param name="_Writer"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.AssetsFile.WriteObjects(System.Byte[]@,System.Collections.Generic.List{OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectInfo}@)">
+            <summary>
+            Writes the objects in _ObjectData and returns the object infos.
+            Returns if the writing succeded.
+            </summary>
+            <param name="_ObjectData"></param>
+            <param name="_ObjectInfos"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.AssetsFile.WriteMetadata(System.Byte[]@)">
+            <summary>
+            Write the metadata to a stream and return it over _Metadata.
+            </summary>
+            <param name="_Metadata"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.AssetsFile.WriteHeader(System.Byte[]@)">
+            <summary>
+            Write the header to a stream and return it over _HeaderData.
+            </summary>
+            <param name="_HeaderData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.AssetsFile.GetHashCode">
+            <summary>
+            Hashcode.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.AssetsFile.Equals(System.Object)">
+            <summary>
+            Equals.
+            </summary>
+            <param name="_Other"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileHeader">
+            <summary>
+            Header of the assets file.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileHeader.MetadataSize">
+            <summary>
+            Size of the metadata in bytes.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileHeader.FileSize">
+            <summary>
+            Whole file size in bytes.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileHeader.Version">
+            <summary>
+            The assets file version.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileHeader.DataOffset">
+            <summary>
+            Byte offset for the objects.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileHeader.EndianType">
+            <summary>
+            The endian of the byte data.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileHeader.Reserved">
+            <summary>
+            Unkown.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileHeader.UnknownBlob">
+            <summary>
+            Unkown.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileHeader.FromBundle">
+            <summary>
+            Is from a bundle.
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileHeader.#ctor(OPS.Assets.Editor.Files.AssetsFiles.AssetsFile,OPS.Assets.Editor.IO.EndianBinaryReader)">
+            <summary>
+            Create a assets file header, by passing the owning _AssetsFile and _Reader, to read data from.
+            </summary>
+            <param name="_AssetsFile"></param>
+            <param name="_Reader"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileHeader.Write(OPS.Assets.Editor.Files.AssetsFiles.AssetsFile,OPS.Assets.Editor.IO.EndianBinaryWriter)">
+            <summary>
+            Write the assets file header, belonging to _AssetsFile with _Writer. 
+            </summary>
+            <param name="_AssetsFile"></param>
+            <param name="_Writer"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileHeader.GetHashCode">
+            <summary>
+            Hashcode.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileHeader.Equals(System.Object)">
+            <summary>
+            Equals.
+            </summary>
+            <param name="_Other"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileMetadata">
+            <summary>
+            Metadata of the assets file.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileMetadata.Version">
+            <summary>
+            Version to read and write the metadata.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileMetadata.UnityVersion">
+            <summary>
+            The unity version of the assets file.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileMetadata.TargetPlatform">
+            <summary>
+            The unity target platform of the assets file.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileMetadata.EnableTypeTree">
+            <summary>
+            If type tree is enabled, serialized types map their whole field/properties and dependencies, to allow comptibility between unity versions.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileMetadata.SerializedTypes">
+            <summary>
+            Serialized types.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileMetadata.ObjectInfos">
+            <summary>
+            Info about the serialized objects.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileMetadata.Preloads">
+            <summary>
+            List of objects need to be preloaded.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileMetadata.Externals">
+            <summary>
+            List over the external file references.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileMetadata.RefactoredSerializedTypes">
+            <summary>
+            Refeactored serialized types.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileMetadata.UserInformation">
+            <summary>
+            User informations that are always empty.
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileMetadata.#ctor(OPS.Assets.Editor.Files.AssetsFiles.AssetsFile,OPS.Assets.Editor.IO.EndianBinaryReader)">
+            <summary>
+            Create a assets file metadata, by passing the owning _AssetsFile and _Reader, to read data from.
+            </summary>
+            <param name="_AssetsFile"></param>
+            <param name="_Reader"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileMetadata.Write(OPS.Assets.Editor.Files.AssetsFiles.AssetsFile,OPS.Assets.Editor.IO.EndianBinaryWriter)">
+            <summary>
+            Write the assets file metadata, belonging to _AssetsFile with _Writer. 
+            </summary>
+            <param name="_AssetsFile"></param>
+            <param name="_Writer"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileMetadata.GetHashCode">
+            <summary>
+            Hashcode.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileMetadata.Equals(System.Object)">
+            <summary>
+            Equals.
+            </summary>
+            <param name="_Other"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.IObject">
+            <summary>
+            Iterface over a unity object.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.IObject.PathId">
+            <summary>
+            All objects have a unique path id in its file.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.IObject.TypeGuid">
+            <summary>
+            The guid of the type this object belongs too.
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.IObject.Write(OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectWriter)">
+            <summary>
+            Write the object to a stream.
+            </summary>
+            <param name="_Writer"></param>
+        </member>
+        <member name="T:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.MonoScript">
+            <summary>
+            Represents a unity mono script.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.MonoScript.ExecutionOrder">
+            <summary>
+            The order of execution while runtime.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.MonoScript.PropertyGuid">
+            <summary>
+            The guid.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.MonoScript.ClassName">
+            <summary>
+            The class name.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.MonoScript.Namespace">
+            <summary>
+            The namespace.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.MonoScript.AssemblyName">
+            <summary>
+            The assembly name.
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.MonoScript.#ctor(System.Int64,System.Guid,System.String,System.Int32,System.Guid,System.String,System.String,System.String)">
+            <summary>
+            Create a monoscript by parameter.
+            </summary>
+            <param name="_PathId"></param>
+            <param name="_TypeGuid"></param>
+            <param name="_Name"></param>
+            <param name="_ExecutionOrder"></param>
+            <param name="_PropertyGuid"></param>
+            <param name="_ClassName"></param>
+            <param name="_Namespace"></param>
+            <param name="_AssemblyName"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.MonoScript.#ctor(OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectReader)">
+            <summary>
+            Read the objects data from _Reader.
+            </summary>
+            <param name="_Reader"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.MonoScript.UpdateType(System.String,System.String,System.String)">
+            <summary>
+            Update the mono scripts type.
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.MonoScript.Write(OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectWriter)">
+            <summary>
+            Write the object data.
+            </summary>
+            <param name="_Writer"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.MonoScript.GetHashCode">
+            <summary>
+            Hashcode.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.MonoScript.Equals(System.Object)">
+            <summary>
+            Equals.
+            </summary>
+            <param name="_Other"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.NamedObject">
+            <summary>
+            Represents a unity named object.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.NamedObject.Name">
+            <summary>
+            The objects name.
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.NamedObject.#ctor(System.Int64,System.Guid,System.String)">
+            <summary>
+            Create a named object by parameter.
+            </summary>
+            <param name="_PathId"></param>
+            <param name="_TypeGuid"></param>
+            <param name="_Name"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.NamedObject.#ctor(OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectReader)">
+            <summary>
+            Read the objects data from _Reader.
+            </summary>
+            <param name="_Reader"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.NamedObject.Write(OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectWriter)">
+            <summary>
+            Write the object data.
+            </summary>
+            <param name="_Writer"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.NamedObject.GetHashCode">
+            <summary>
+            Hashcode.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.NamedObject.Equals(System.Object)">
+            <summary>
+            Equals.
+            </summary>
+            <param name="_Other"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.EditorExtension">
+            <summary>
+            Represents an unity editor extension.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.EditorExtension.PrefabParentObject">
+            <summary>
+            The origin prefab object.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.EditorExtension.PrefabInternal">
+            <summary>
+            A internal unity prefab.
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.EditorExtension.#ctor(System.Int64,System.Guid)">
+            <summary>
+            Create an editor extension by parameter.
+            </summary>
+            <param name="_PathId"></param>
+            <param name="_TypeGuid"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.EditorExtension.#ctor(OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectReader)">
+            <summary>
+            Read the object data from _Reader.
+            </summary>
+            <param name="_Reader"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.EditorExtension.Write(OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectWriter)">
+            <summary>
+            Write the object data.
+            </summary>
+            <param name="_Writer"></param>
+        </member>
+        <member name="T:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.DefaultObject">
+            <summary>
+            A not categorized object. Just reads the data blob.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.DefaultObject.PathId">
+            <summary>
+            All objects have a path id (is not unique!).
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.DefaultObject.TypeGuid">
+            <summary>
+            The guid of the type this object belongs too.
+            </summary>
+        </member>
+        <member name="F:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.DefaultObject.DataBlob">
+            <summary>
+            All data of the object.
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.DefaultObject.#ctor(OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectReader)">
+            <summary>
+            Read the object data from _Reader.
+            </summary>
+            <param name="_Reader"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.DefaultObject.Write(OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectWriter)">
+            <summary>
+            Write the object data.
+            </summary>
+            <param name="_Writer"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.DefaultObject.GetHashCode">
+            <summary>
+            Hashcode.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.DefaultObject.Equals(System.Object)">
+            <summary>
+            Equals.
+            </summary>
+            <param name="_Other"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.Object">
+            <summary>
+            Reprensents the unity object.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.Object.PathId">
+            <summary>
+            All objects have a unique path id in its file.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.Object.TypeGuid">
+            <summary>
+            The guid of the type this object belongs too.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.Object.ObjectHideFlags">
+            <summary>
+            Flag over visibilty by camera.
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.Object.#ctor(System.Int64,System.Guid)">
+            <summary>
+            Create an object by parameter.
+            </summary>
+            <param name="_PathId"></param>
+            <param name="_TypeGuid"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.Object.#ctor(OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectReader)">
+            <summary>
+            Read the object data from _Reader.
+            </summary>
+            <param name="_Reader"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.Object.Write(OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectWriter)">
+            <summary>
+            Write an object to _Writer.
+            </summary>
+            <param name="_Writer"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.Object.GetHashCode">
+            <summary>
+            Hashcode.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.Object.Equals(System.Object)">
+            <summary>
+            Equals.
+            </summary>
+            <param name="_Other"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.PPtr`1">
+            <summary>
+            Pointer to another unity object.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="F:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.PPtr`1.FileId">
+            <summary>
+            The file id.
+            0: The current read assets file.
+            1...n: External file id.
+            </summary>
+        </member>
+        <member name="F:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.PPtr`1.PathId">
+            <summary>
+            The path id. Each object has a unique (in the file) path id.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.PPtr`1.IsNull">
+            <summary>
+            Is a reference or not.
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.PPtr`1.#ctor(OPS.Assets.Editor.IO.EndianBinaryReader)">
+            <summary>
+            Read the object pointer data from _Reader.
+            </summary>
+            <param name="_Reader"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.Classes.PPtr`1.Write(OPS.Assets.Editor.IO.EndianBinaryWriter)">
+            <summary>
+            Write the object pointer.
+            </summary>
+            <param name="_Writer"></param>
+        </member>
+        <member name="T:OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectWriter">
+            <summary>
+            Writer of an object. 
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectWriter.AssetsFile">
+            <summary>
+            The belonging assets file.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectWriter.BuildTarget">
+            <summary>
+            The build target, read form the metafiles.
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectWriter.#ctor(OPS.Assets.Editor.IO.EndianBinaryWriter,OPS.Assets.Editor.Files.AssetsFiles.AssetsFile)">
+            <summary>
+            The object writer needs an endian writer and the assets file.
+            </summary>
+            <param name="_Writer"></param>
+            <param name="_AssetsFile"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectWriter.#ctor(System.IO.Stream,OPS.Assets.Editor.IO.EndianType,OPS.Assets.Editor.Files.AssetsFiles.AssetsFile)">
+            <summary>
+            The object writer needs a stream, endian and the assets file.
+            </summary>
+            <param name="_Stream"></param>
+            <param name="_EndianType"></param>
+            <param name="_AssetsFile"></param>
+        </member>
+        <member name="T:OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectReader">
+            <summary>
+            Reader of objects.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectReader.AssetsFile">
+            <summary>
+            The belonging assets file.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectReader.ObjectInfo">
+            <summary>
+            The belonging object info.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectReader.BuildTarget">
+            <summary>
+            The build target, read form the metafiles.
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectReader.#ctor(OPS.Assets.Editor.IO.EndianBinaryReader,OPS.Assets.Editor.Files.AssetsFiles.AssetsFile,OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectInfo)">
+            <summary>
+            The object reader needs a endian reader, the assets file and the object info.
+            </summary>
+            <param name="_Reader"></param>
+            <param name="_AssetsFile"></param>
+            <param name="_ObjectInfo"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectReader.#ctor(System.IO.Stream,OPS.Assets.Editor.IO.EndianType,OPS.Assets.Editor.Files.AssetsFiles.AssetsFile,OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectInfo)">
+            <summary>
+            The object reader needs a stream, endian, the assets file and the object info.
+            </summary>
+            <param name="_Stream"></param>
+            <param name="_EndianType"></param>
+            <param name="_AssetsFile"></param>
+            <param name="_ObjectInfo"></param>
+        </member>
+        <member name="T:OPS.Assets.Editor.Files.AssetsFiles.Objects.YamlClassIdType">
+            <summary>
+            Unity class id types.
+            </summary>
+        </member>
+        <member name="T:OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectInfo">
+            <summary>
+            Information about an serialized object.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectInfo.Version">
+            <summary>
+            The serialized version of the type.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectInfo.PathId">
+            <summary>
+            All objects have a unique path id in its file.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectInfo.ByteOffset">
+            <summary>
+            The byte offsets for the objects data. Does not include the metadata data offset!
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectInfo.ByteCount">
+            <summary>
+            The amount of bytes this objects consists of.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectInfo.SerializedType">
+            <summary>
+            The serialized type.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectInfo.ClassId">
+            <summary>
+            The unity class id of the serialized type.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectInfo.TypeGuid">
+            <summary>
+            The unique guid of the serialized type. Because there can be multiple custom serialized types sharing the same class ids (for example being of class MonoBehaviour).
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectInfo.#ctor(OPS.Assets.Editor.Files.AssetsFiles.AssetsFileFormatVersion,System.Int64,System.Int64,System.UInt32,OPS.Assets.Editor.Files.AssetsFiles.Types.SerializedType)">
+            <summary>
+            Create a object info directly by data.
+            </summary>
+            <param name="_Version"></param>
+            <param name="_PathId"></param>
+            <param name="_ByteOffset"></param>
+            <param name="_ByteCount"></param>
+            <param name="_SerializedType"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectInfo.#ctor(OPS.Assets.Editor.Files.AssetsFiles.AssetsFile,OPS.Assets.Editor.Files.AssetsFiles.AssetsFileMetadata,OPS.Assets.Editor.IO.EndianBinaryReader)">
+            <summary>
+            Create a object info, by passing the owning _AssetsFile, _AssetsFileMetadata, _Reader, to read data from.
+            </summary>
+            <param name="_AssetsFile"></param>
+            <param name="_AssetsFileMetadata"></param>
+            <param name="_Reader"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectInfo.Write(OPS.Assets.Editor.Files.AssetsFiles.AssetsFile,OPS.Assets.Editor.Files.AssetsFiles.AssetsFileMetadata,OPS.Assets.Editor.IO.EndianBinaryWriter)">
+            <summary>
+            Write a object info belongign to _AssetsFileMetadata.
+            </summary>
+            <param name="_AssetsFile"></param>
+            <param name="_AssetsFileMetadata"></param>
+            <param name="_Writer"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectInfo.GetHashCode">
+            <summary>
+            Hashcode.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Objects.ObjectInfo.Equals(System.Object)">
+            <summary>
+            Equals.
+            </summary>
+            <param name="_Other"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPS.Assets.Editor.Files.AssetsFiles.Preloads.PreloadIdentifier">
+            <summary>
+            Maps to a object to be preloaded.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Preloads.PreloadIdentifier.Version">
+            <summary>
+            The serialized version of the type.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Preloads.PreloadIdentifier.FileId">
+            <summary>
+            The file id.
+            0: The current read assets file.
+            1...n: External file id.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Preloads.PreloadIdentifier.PathId">
+            <summary>
+            The path id. Each object has a unique (in the file) path id.
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Preloads.PreloadIdentifier.#ctor(OPS.Assets.Editor.Files.AssetsFiles.AssetsFileFormatVersion,System.Int32,System.Int64)">
+            <summary>
+            Create a script identifier by parameters.
+            </summary>
+            <param name="_Version"></param>
+            <param name="_FileId"></param>
+            <param name="_PathId"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Preloads.PreloadIdentifier.#ctor(OPS.Assets.Editor.Files.AssetsFiles.AssetsFile,OPS.Assets.Editor.Files.AssetsFiles.AssetsFileMetadata,OPS.Assets.Editor.IO.EndianBinaryReader)">
+            <summary>
+            Create a script identifier, by passing the owning _AssetsFile, _AssetsFileMetadata, _Reader, to read data from.
+            </summary>
+            <param name="_AssetsFile"></param>
+            <param name="_AssetsFileMetadata"></param>
+            <param name="_Reader"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Preloads.PreloadIdentifier.Write(OPS.Assets.Editor.Files.AssetsFiles.AssetsFile,OPS.Assets.Editor.Files.AssetsFiles.AssetsFileMetadata,OPS.Assets.Editor.IO.EndianBinaryWriter)">
+            <summary>
+            Write a script identifier.
+            </summary>
+            <param name="_AssetsFile"></param>
+            <param name="_AssetsFileMetadata"></param>
+            <param name="_Writer"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Preloads.PreloadIdentifier.GetHashCode">
+            <summary>
+            Hashcode.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Preloads.PreloadIdentifier.Equals(System.Object)">
+            <summary>
+            Equals.
+            </summary>
+            <param name="_Other"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPS.Assets.Editor.Files.AssetsFiles.Externals.FileIdentifier">
+            <summary>
+            Identifier to an extern file.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Externals.FileIdentifier.Version">
+            <summary>
+            The serialized version of the type.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Externals.FileIdentifier.BufferedPath">
+            <summary>
+            The buffered path, mostly empty.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Externals.FileIdentifier.Guid">
+            <summary>
+            The file guid.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Externals.FileIdentifier.AssetType">
+            <summary>
+            The asset type.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Externals.FileIdentifier.PathName">
+            <summary>
+            The file path.
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Externals.FileIdentifier.#ctor(OPS.Assets.Editor.Files.AssetsFiles.AssetsFileFormatVersion,System.String,System.Guid,System.Int32,System.String)">
+            <summary>
+            Create a file identifier by parameter.
+            </summary>
+            <param name="_Version"></param>
+            <param name="_BufferedPath"></param>
+            <param name="_Guid"></param>
+            <param name="_AssetType"></param>
+            <param name="_PathName"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Externals.FileIdentifier.#ctor(OPS.Assets.Editor.Files.AssetsFiles.AssetsFile,OPS.Assets.Editor.Files.AssetsFiles.AssetsFileMetadata,OPS.Assets.Editor.IO.EndianBinaryReader)">
+            <summary>
+            Create a file identifier, by passing the owning _AssetsFile, _AssetsFileMetadata, _Reader, to read data from.
+            </summary>
+            <param name="_AssetsFile"></param>
+            <param name="_AssetsFileMetadata"></param>
+            <param name="_Reader"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Externals.FileIdentifier.Write(OPS.Assets.Editor.Files.AssetsFiles.AssetsFile,OPS.Assets.Editor.Files.AssetsFiles.AssetsFileMetadata,OPS.Assets.Editor.IO.EndianBinaryWriter)">
+            <summary>
+            Write a file identifier.
+            </summary>
+            <param name="_AssetsFile"></param>
+            <param name="_AssetsFileMetadata"></param>
+            <param name="_Writer"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Externals.FileIdentifier.GetHashCode">
+            <summary>
+            Hashcode.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Externals.FileIdentifier.Equals(System.Object)">
+            <summary>
+            Equals.
+            </summary>
+            <param name="_Other"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileFormatVersion">
+            <summary>
+            Version of a unity file.
+            </summary>
+        </member>
+        <member name="F:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileFormatVersion.v5_0_1_AndUp">
+            <summary>
+            Added support for stripped objects.
+            </summary>
+        </member>
+        <member name="F:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileFormatVersion.v5_5_0a_AndUp">
+            <summary>
+            Refactoring of class id.
+            </summary>
+        </member>
+        <member name="F:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileFormatVersion.v5_5_0b_AndUp">
+            <summary>
+            Refactoring type data.
+            </summary>
+        </member>
+        <member name="F:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileFormatVersion.v2019_1a_AndUp">
+            <summary>
+            Refactoring of shareable type tree data.
+            </summary>
+        </member>
+        <member name="F:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileFormatVersion.v2019_1_AndUp">
+            <summary>
+            Added flags for type trees nodes.
+            </summary>
+        </member>
+        <member name="F:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileFormatVersion.v2019_2_AndUp">
+            <summary>
+            Refactoring of serialized types.
+            </summary>
+        </member>
+        <member name="F:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileFormatVersion.v2019_3_AndUp">
+            <summary>
+            Added storing of type dependencies.
+            </summary>
+        </member>
+        <member name="F:OPS.Assets.Editor.Files.AssetsFiles.AssetsFileFormatVersion.v2020_1_AndUp">
+            <summary>
+            Added support for large files.
+            </summary>
+        </member>
+        <member name="T:OPS.Assets.Editor.Files.AssetsFiles.Types.SerializedType">
+            <summary>
+            Represents a type of the unity objects.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Types.SerializedType.Version">
+            <summary>
+            The serialized version of the type.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Types.SerializedType.IsRefactoredType">
+            <summary>
+            The type is the newer refactored version.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Types.SerializedType.ClassId">
+            <summary>
+            Unity class id - Can be anything from GameObject, GameObject, MonoBehaviour, MonoScript, ...
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Types.SerializedType.IsStrippedType">
+            <summary>
+            Is stripped outside (older unity version I think).
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Types.SerializedType.ScriptTypeIndex">
+            <summary>
+            Index to a script type.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Types.SerializedType.ScriptGuid">
+            <summary>
+            A Hash128 Guid. Representing the newer used script guid instead of type guid.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.AssetsFiles.Types.SerializedType.TypeGuid">
+            <summary>
+            A Hash128 Guid. Representing the type guid.
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Types.SerializedType.#ctor(OPS.Assets.Editor.Files.AssetsFiles.AssetsFileFormatVersion,System.Boolean,System.Int32,System.Boolean,System.Int16,System.Guid,System.Guid)">
+            <summary>
+            Create a serialized type by parameter.
+            </summary>
+            <param name="_Version"></param>
+            <param name="_IsRefactoredType"></param>
+            <param name="_ClassId"></param>
+            <param name="_IsStrippedType"></param>
+            <param name="_ScriptTypeIndex"></param>
+            <param name="_ScriptGuid"></param>
+            <param name="_TypeGuid"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Types.SerializedType.#ctor(OPS.Assets.Editor.Files.AssetsFiles.AssetsFile,OPS.Assets.Editor.Files.AssetsFiles.AssetsFileMetadata,OPS.Assets.Editor.IO.EndianBinaryReader,System.Boolean)">
+            <summary>
+            Create a serialized type, by passing the owning _AssetsFile, _AssetsFileMetadata, _Reader, to read data from and a flag if it is the newer refactored type.
+            </summary>
+            <param name="_AssetsFile"></param>
+            <param name="_AssetsFileMetadata"></param>
+            <param name="_Reader"></param>
+            <param name="_IsRefactoredType"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Types.SerializedType.Write(OPS.Assets.Editor.Files.AssetsFiles.AssetsFile,OPS.Assets.Editor.Files.AssetsFiles.AssetsFileMetadata,OPS.Assets.Editor.IO.EndianBinaryWriter)">
+            <summary>
+            Write a serialized type belonging to a metadata.
+            </summary>
+            <param name="_AssetsFile"></param>
+            <param name="_AssetsFileMetadata"></param>
+            <param name="_Writer"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Types.SerializedType.GetHashCode">
+            <summary>
+            Hashcode.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.AssetsFiles.Types.SerializedType.Equals(System.Object)">
+            <summary>
+            Equals.
+            </summary>
+            <param name="_Other"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPS.Assets.Editor.Files.BundleFiles.BundlesFileFormatVersion">
+            <summary>
+            Version of a unity bundle file.
+            </summary>
+        </member>
+        <member name="F:OPS.Assets.Editor.Files.BundleFiles.BundlesFileFormatVersion.kUnknown_1">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="F:OPS.Assets.Editor.Files.BundleFiles.BundlesFileFormatVersion.kUnknown_2">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="F:OPS.Assets.Editor.Files.BundleFiles.BundlesFileFormatVersion.kUnknown_3">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="F:OPS.Assets.Editor.Files.BundleFiles.BundlesFileFormatVersion.kUnknown_4">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="F:OPS.Assets.Editor.Files.BundleFiles.BundlesFileFormatVersion.kUnknown_5">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="F:OPS.Assets.Editor.Files.BundleFiles.BundlesFileFormatVersion.kUnknown_6">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="F:OPS.Assets.Editor.Files.BundleFiles.BundlesFileFormatVersion.kUnknown_7">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="T:OPS.Assets.Editor.Files.BundleFiles.BundlesFile">
+            <summary>
+            Represents a unity bundle file.
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.BundleFiles.BundlesFile.#ctor(OPS.Assets.Editor.Files.UnityFileReader)">
+            <summary>
+            Read the bundle file data from the _Reader.
+            </summary>
+            <param name="_Reader"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.BundleFiles.BundlesFile.Write(OPS.Assets.Editor.Files.UnityFileWriter)">
+            <summary>
+            Write bundle file.
+            </summary>
+            <param name="_Writer"></param>
+        </member>
+        <member name="T:OPS.Assets.Editor.Files.UnityFile`1">
+            <summary>
+            Represents a version able unity file.
+            </summary>
+            <typeparam name="TVersionFormat"></typeparam>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.UnityFile`1.Version">
+            <summary>
+            The version format.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.UnityFile`1.FullFilePath">
+            <summary>
+            The full file path.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.UnityFile`1.FileName">
+            <summary>
+            The file name.
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.UnityFile`1.#ctor(OPS.Assets.Editor.Files.UnityFileReader)">
+            <summary>
+            Read a unity file.
+            </summary>
+            <param name="_Reader"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.UnityFile`1.Write(OPS.Assets.Editor.Files.UnityFileWriter)">
+            <summary>
+            Write a unity file.
+            </summary>
+            <param name="_Writer"></param>
+        </member>
+        <member name="T:OPS.Assets.Editor.Files.UnityFileWriter">
+            <summary>
+            A endian binary writer for unity files.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.UnityFileWriter.FullFilePath">
+            <summary>
+            Get the full file path.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.UnityFileWriter.FileName">
+            <summary>
+            Get the file name.
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.UnityFileWriter.#ctor(System.String)">
+            <summary>
+            Create a reader by the _FilePath.
+            </summary>
+            <param name="_FilePath"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.UnityFileWriter.#ctor(System.String,System.IO.Stream)">
+            <summary>
+            Create a reader for _FilePath by _Stream.
+            </summary>
+            <param name="_FilePath"></param>
+            <param name="_Stream"></param>
+        </member>
+        <member name="T:OPS.Assets.Editor.Files.UnityFileReader">
+            <summary>
+            A endian binary reader for unity files.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.UnityFileReader.FullFilePath">
+            <summary>
+            Get the full file path.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.UnityFileReader.FileName">
+            <summary>
+            Get the file name.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.Files.UnityFileReader.FileType">
+            <summary>
+            Get the file type.
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.UnityFileReader.#ctor(System.String)">
+            <summary>
+            Create a reader by the _FilePath.
+            </summary>
+            <param name="_FilePath"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.UnityFileReader.#ctor(System.String,System.IO.Stream)">
+            <summary>
+            Create a reader for _FilePath by _Stream.
+            </summary>
+            <param name="_FilePath"></param>
+            <param name="_Stream"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.UnityFileReader.CheckFileType">
+            <summary>
+            Find the file type and reset stream position.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Assets.Editor.Files.UnityFileReader.IsAssetsFile">
+            <summary>
+            Find if the file is a assets unity file.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:OPS.Assets.Editor.Files.UnityFileType">
+            <summary>
+            The file type of a unity file.
+            </summary>
+        </member>
+        <member name="T:OPS.Assets.Editor.IO.EndianBinaryReader">
+            <summary>
+            Extends the BinaryReader to read either BigEndian or LittleEndian.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.IO.EndianBinaryReader.Endian">
+            <summary>
+            The EndianType to read.
+            </summary>
+        </member>
+        <member name="F:OPS.Assets.Editor.IO.EndianBinaryReader.buffer2">
+            <summary>
+            Simple read 2 byte buffer.
+            </summary>
+        </member>
+        <member name="F:OPS.Assets.Editor.IO.EndianBinaryReader.buffer4">
+            <summary>
+            Simple read 4 byte buffer.
+            </summary>
+        </member>
+        <member name="F:OPS.Assets.Editor.IO.EndianBinaryReader.buffer8">
+            <summary>
+            Simple read 8 byte buffer.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.IO.EndianBinaryReader.Position">
+            <summary>
+            The BaseStream Position.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.IO.EndianBinaryReader.BitConverterEndian">
+            <summary>
+            The EndianType of the BitConverter.
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.IO.EndianBinaryReader.#ctor(System.IO.Stream,OPS.Assets.Editor.IO.EndianType)">
+            <summary>
+            The endian binary reader needs a stream to read from and the endian.
+            </summary>
+            <param name="stream"></param>
+            <param name="endian"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.IO.EndianBinaryReader.AlignStream">
+            <summary>
+            Unity uses 4 byte blocks. Align the stream if uneven to it.
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.IO.EndianBinaryReader.AlignStream(System.Int32)">
+            <summary>
+            Align the stream to _Alignment if uneven to it.
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.IO.EndianBinaryReader.ReadInt16">
+            <summary>
+            Read a Int16 depend on Endian.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Assets.Editor.IO.EndianBinaryReader.ReadUInt16">
+            <summary>
+            Read a UInt16 depend on Endian.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Assets.Editor.IO.EndianBinaryReader.ReadInt32">
+            <summary>
+            Read a Int32 depend on Endian.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Assets.Editor.IO.EndianBinaryReader.ReadUInt32">
+            <summary>
+            Read a UInt32 depend on Endian.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Assets.Editor.IO.EndianBinaryReader.ReadInt64">
+            <summary>
+            Read a Int64 depend on Endian.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Assets.Editor.IO.EndianBinaryReader.ReadUInt64">
+            <summary>
+            Read a UInt64 depend on Endian.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Assets.Editor.IO.EndianBinaryReader.ReadSingle">
+            <summary>
+            Read a Float depend on Endian.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Assets.Editor.IO.EndianBinaryReader.ReadDouble">
+            <summary>
+            Read a Double depend on Endian.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Assets.Editor.IO.EndianBinaryReader.ReadAlignedString">
+            <summary>
+            Read an aligned string.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:OPS.Assets.Editor.IO.EndianBinaryReader.ReadStringToNull(System.Int32)">
+            <summary>
+            Read a string until read null byte.
+            </summary>
+            <param name="_MaxLength"></param>
+            <returns></returns>
+        </member>
+        <member name="T:OPS.Assets.Editor.IO.EndianBinaryWriter">
+            <summary>
+            Extends the BinaryWriter to write either BigEndian or LittleEndian.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.IO.EndianBinaryWriter.Endian">
+            <summary>
+            The EndianType to read.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.IO.EndianBinaryWriter.Position">
+            <summary>
+            The BaseStream Position.
+            </summary>
+        </member>
+        <member name="P:OPS.Assets.Editor.IO.EndianBinaryWriter.BitConverterEndian">
+            <summary>
+            The EndianType of the BitConverter.
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.IO.EndianBinaryWriter.#ctor(System.IO.Stream,OPS.Assets.Editor.IO.EndianType)">
+            <summary>
+            The endian binary writer needs a stream to write to and the endian.
+            </summary>
+            <param name="stream"></param>
+            <param name="endian"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.IO.EndianBinaryWriter.AlignStream">
+            <summary>
+            Unity uses 4 byte blocks. Align the stream if uneven to it.
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.IO.EndianBinaryWriter.AlignStream(System.Int32)">
+            <summary>
+            Align the stream to _Alignment if uneven to it.
+            </summary>
+        </member>
+        <member name="M:OPS.Assets.Editor.IO.EndianBinaryWriter.Write(System.Int16)">
+            <summary>
+            Write a Int16 depend on Endian.
+            </summary>
+            <param name="_Value"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.IO.EndianBinaryWriter.Write(System.UInt16)">
+            <summary>
+            Write a UInt16 depend on Endian.
+            </summary>
+            <param name="_Value"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.IO.EndianBinaryWriter.Write(System.Int32)">
+            <summary>
+            Write a Int32 depend on Endian.
+            </summary>
+            <param name="_Value"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.IO.EndianBinaryWriter.Write(System.UInt32)">
+            <summary>
+            Write a UInt32 depend on Endian.
+            </summary>
+            <param name="_Value"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.IO.EndianBinaryWriter.Write(System.Int64)">
+            <summary>
+            Write a Int64 depend on Endian.
+            </summary>
+            <param name="_Value"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.IO.EndianBinaryWriter.Write(System.UInt64)">
+            <summary>
+            Write a UInt64 depend on Endian.
+            </summary>
+            <param name="_Value"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.IO.EndianBinaryWriter.Write(System.Single)">
+            <summary>
+            Write a float depend on Endian.
+            </summary>
+            <param name="_Value"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.IO.EndianBinaryWriter.Write(System.Double)">
+            <summary>
+            Write a double depend on Endian.
+            </summary>
+            <param name="_Value"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.IO.EndianBinaryWriter.WriteAlignedString(System.String)">
+            <summary>
+            Write an aligned string and write the length.
+            </summary>
+            <param name="_String"></param>
+        </member>
+        <member name="M:OPS.Assets.Editor.IO.EndianBinaryWriter.WriteStringToNull(System.String)">
+            <summary>
+            Write a string without writing the length. And add a NULL at the end.
+            </summary>
+            <param name="_String"></param>
+        </member>
+        <member name="T:OPS.Assets.Editor.IO.EndianType">
+            <summary>
+            Enumeration over the endian type.
+            </summary>
+        </member>
+        <member name="F:OPS.Assets.Editor.IO.EndianType.LittleEndian">
+            <summary>
+            Little endian.
+            </summary>
+        </member>
+        <member name="F:OPS.Assets.Editor.IO.EndianType.BigEndian">
+            <summary>
+            Big endian.
+            </summary>
+        </member>
+        <member name="T:OPS.Assets.Editor.Version.IVersionAble`1">
+            <summary>
+            The class is version able.
+            </summary>
+            <typeparam name="TVersionFormat"></typeparam>
+        </member>
+        <member name="P:OPS.Assets.Editor.Version.IVersionAble`1.Version">
+            <summary>
+            Current version.
+            </summary>
+        </member>
+    </members>
+</doc>

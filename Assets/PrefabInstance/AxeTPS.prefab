@@ -1,0 +1,344 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1849934361280768}
+  m_IsPrefabParent: 1
+--- !u!1 &1849934361280768
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4294805738288861}
+  - component: {fileID: 114289915664300475}
+  - component: {fileID: 114463690382382437}
+  - component: {fileID: 205338768911266604}
+  m_Layer: 0
+  m_Name: AxeTPS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &4294805738288861
+Transform:
+  m_GameObject: {fileID: 1849934361280768}
+  m_LocalRotation: {x: 0.03723183, y: 0.3371232, z: 0.0371807, w: 0.939989}
+  m_LocalPosition: {x: 0.266, y: 0.148, z: -0.162}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4050787209944816}
+  - {fileID: 4156012011225705}
+  - {fileID: 4716517957190663}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 7.038797, y: -39.12509, z: -7.03421}
+--- !u!114 &114289915664300475
+MonoBehaviour:
+  m_GameObject: {fileID: 1849934361280768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deb37702473004d46bd8912dbc7a467a, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  Data:
+    weapon: 0
+    skin: 0
+    stickers:
+    firestat: 0
+  WeaponAtlas:
+  - {fileID: 114092916593866172}
+  - {fileID: 114166749855094183}
+  Muzzle:
+    enabled: 1
+    transform: {fileID: 4716517957190663}
+    meshRenderer: {fileID: 23956698900772213}
+  DefaultPosition: {x: 0.266, y: 0.148, z: -0.162}
+  DefaultRotation: {x: 0.03723183, y: 0.3371232, z: 0.0371807, w: 0.939989}
+  FireStat:
+    enabled: 0
+    target: {fileID: 0}
+    counters: []
+    value: 0
+  Stickers: []
+  DoubleWeapon:
+    enabled: 0
+    leftWeapon: {fileID: 0}
+    rightMuzzle:
+      enabled: 1
+      transform: {fileID: 0}
+      meshRenderer: {fileID: 0}
+    leftMuzzle:
+      enabled: 1
+      transform: {fileID: 0}
+      meshRenderer: {fileID: 0}
+    leftWeaponPosition: {x: 0, y: 0, z: 0}
+    leftWeaponRotation: {x: 0, y: 0, z: 0}
+    toogle: 0
+  Sound: 1
+  Timer: {fileID: 114463690382382437}
+--- !u!114 &114463690382382437
+MonoBehaviour:
+  m_GameObject: {fileID: 1849934361280768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e492bc1877955c4988fae5fb89bbc41, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!205 &205338768911266604
+LODGroup:
+  m_GameObject: {fileID: 1849934361280768}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.1620373, y: 0.01963043, z: 0.01299997}
+  m_Size: 1.17864
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.1110363
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23417232740851087}
+    - renderer: {fileID: 23956698900772213}
+  - screenRelativeHeight: 0.03587721
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 23123481351781769}
+    - renderer: {fileID: 23956698900772213}
+  m_Enabled: 1
+--- !u!1 &1968960941461607
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4050787209944816}
+  - component: {fileID: 33159799281863351}
+  - component: {fileID: 23417232740851087}
+  - component: {fileID: 114092916593866172}
+  m_Layer: 0
+  m_Name: Axe
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4050787209944816
+Transform:
+  m_GameObject: {fileID: 1968960941461607}
+  m_LocalRotation: {x: 0.7061416, y: -0.7080653, z: -0.002280117, w: -0.001579711}
+  m_LocalPosition: {x: -0.254, y: 0.021, z: 0.013}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4294805738288861}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 179.9428, y: -0.3126789, z: 90.15604}
+--- !u!33 &33159799281863351
+MeshFilter:
+  m_GameObject: {fileID: 1968960941461607}
+  m_Mesh: {fileID: 0}
+--- !u!23 &23417232740851087
+MeshRenderer:
+  m_GameObject: {fileID: 1968960941461607}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 4d03f6c7e05f64142b2a3f3b2a981133, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!114 &114092916593866172
+MonoBehaviour:
+  m_GameObject: {fileID: 1968960941461607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d41e57bd587c8746a274b29fe6dd1f8, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  originalMesh: {fileID: 4300000, guid: 86e42e00cfd175542ba17fab41bd0915, type: 2}
+  mScale: {x: 1, y: 1, z: 1}
+  mPivot: {x: 0, y: 0, z: 0}
+  mSpriteSize:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  mMirrorX: 0
+  mMirrorY: 0
+  mMirrorZ: 0
+  mFlip: 0
+  mColor: {r: 1, g: 1, b: 1, a: 1}
+  originalMaterial: {fileID: 2100000, guid: 4d03f6c7e05f64142b2a3f3b2a981133, type: 2}
+  atlasMaterial: {fileID: 2100000, guid: 4d03f6c7e05f64142b2a3f3b2a981133, type: 2}
+  mAtlas: {fileID: 114035519202120638, guid: 64518b0056fc1ba4ea940ebec7127d94, type: 2}
+  mSpriteName: 10-0
+--- !u!1 &1080576447987702
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4156012011225705}
+  - component: {fileID: 33579464958441410}
+  - component: {fileID: 23123481351781769}
+  - component: {fileID: 114166749855094183}
+  m_Layer: 0
+  m_Name: LOD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4156012011225705
+Transform:
+  m_GameObject: {fileID: 1080576447987702}
+  m_LocalRotation: {x: -0.002280083, y: 0.001579763, z: -0.7061417, w: -0.7080652}
+  m_LocalPosition: {x: -0.254, y: 0.021, z: 0.013}
+  m_LocalScale: {x: 1, y: 1, z: 0.9999999}
+  m_Children: []
+  m_Father: {fileID: 4294805738288861}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0.05717184, y: 0.3126802, z: -89.84398}
+--- !u!33 &33579464958441410
+MeshFilter:
+  m_GameObject: {fileID: 1080576447987702}
+  m_Mesh: {fileID: 0}
+--- !u!23 &23123481351781769
+MeshRenderer:
+  m_GameObject: {fileID: 1080576447987702}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: ea28dd229429aab46b1ac11c2267bccc, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!114 &114166749855094183
+MonoBehaviour:
+  m_GameObject: {fileID: 1080576447987702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d41e57bd587c8746a274b29fe6dd1f8, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  originalMesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  mScale: {x: 0.57, y: 0.345, z: 1}
+  mPivot: {x: 0, y: 0, z: 0}
+  mSpriteSize:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  mMirrorX: 0
+  mMirrorY: 0
+  mMirrorZ: 0
+  mFlip: 0
+  mColor: {r: 1, g: 1, b: 1, a: 1}
+  originalMaterial: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  atlasMaterial: {fileID: 2100000, guid: ea28dd229429aab46b1ac11c2267bccc, type: 2}
+  mAtlas: {fileID: 114452273411760649, guid: 59fedd322f6985e49b634fc0000db899, type: 2}
+  mSpriteName: 10-0
+--- !u!1 &1537162640815040
+GameObject:
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4716517957190663}
+  - component: {fileID: 33674722692419287}
+  - component: {fileID: 23956698900772213}
+  m_Layer: 0
+  m_Name: MuzzleFlashKnife
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4716517957190663
+Transform:
+  m_GameObject: {fileID: 1537162640815040}
+  m_LocalRotation: {x: 0.9999952, y: -0.001360249, z: -0.0004952556, w: -0.002729309}
+  m_LocalPosition: {x: 0.2499979, y: 0.01963028, z: 0.01249702}
+  m_LocalScale: {x: 1, y: 0.9999999, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4294805738288861}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -179.6873, y: -0.05717727, z: 0.1557177}
+--- !u!33 &33674722692419287
+MeshFilter:
+  m_GameObject: {fileID: 1537162640815040}
+  m_Mesh: {fileID: 4300000, guid: 236cfa2b7b7b1844eae65e0cc8454d7a, type: 2}
+--- !u!23 &23956698900772213
+MeshRenderer:
+  m_GameObject: {fileID: 1537162640815040}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 3ea9b7a1cc04e8f458bd231f5f07a0a8, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0

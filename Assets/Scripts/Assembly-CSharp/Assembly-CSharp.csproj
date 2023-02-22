@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net35</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup />
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>..\BS 6.0.8\assets\bin\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\BS 6.0.8\assets\bin\Data\Managed\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>..\BS 6.0.8\assets\bin\Data\Managed\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\BS 6.0.8\assets\bin\Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="P31RestKit">
+      <HintPath>..\BS 6.0.8\assets\bin\Data\Managed\P31RestKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Photon3Unity3D">
+      <HintPath>..\BS 6.0.8\assets\bin\Data\Managed\Photon3Unity3D.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

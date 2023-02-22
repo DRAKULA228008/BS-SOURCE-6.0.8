@@ -1,0 +1,429 @@
+{
+  "ComponentSettings_Array" : [
+    {
+      "Settings_Name" : "Default_Compatibility_Component_DotNet",
+      "SettingElement_Array" : [
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Compatibility_Component_Unity",
+      "SettingElement_Array" : [
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Compatibility_Component_Obfuscator",
+      "SettingElement_Array" : [
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Compatibility_Component_Chartboost",
+      "SettingElement_Array" : [
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Compatibility_Component_Facebook_Sdk",
+      "SettingElement_Array" : [
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Compatibility_Component_Google_Sdk",
+      "SettingElement_Array" : [
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Compatibility_Component_Json_Sdk",
+      "SettingElement_Array" : [
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Compatibility_Component_Photon_Sdk",
+      "SettingElement_Array" : [
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Compatibility_Component_PlayMaker_Sdk",
+      "SettingElement_Array" : [
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Obfuscation_Component_Assembly",
+      "SettingElement_Array" : [
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Assembly_AssemblyCSharp",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Assembly_AssemblyCSharpFirstPass",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Assembly_In_Assets_AssemblyDefinitionFiles",
+          "Value" : "True",
+          "Values" : null
+        }
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Obfuscation_Component_Find_Unity_Animation_MethodReferences",
+      "SettingElement_Array" : [
+        {
+          "Type" : "Bool",
+          "Key" : "Enable_Try_Find_Inspector_Animation_Methods",
+          "Value" : "True",
+          "Values" : null
+        }
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Obfuscation_Component_Find_Unity_Gui_MethodReferences",
+      "SettingElement_Array" : [
+        {
+          "Type" : "Bool",
+          "Key" : "Enable_Try_Find_Inspector_Gui_Methods",
+          "Value" : "True",
+          "Values" : null
+        }
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Obfuscation_Component_String_Reflection_And_Coroutine",
+      "SettingElement_Array" : [
+        {
+          "Type" : "Bool",
+          "Key" : "Enable_Try_Find_String_Reflection_And_Coroutine",
+          "Value" : "True",
+          "Values" : null
+        }
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Obfuscation_Component_Logging",
+      "SettingElement_Array" : [
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Obfuscation_Component_Namespace",
+      "SettingElement_Array" : [
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Namespaces",
+          "Value" : "True",
+          "Values" : null
+        }
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Obfuscation_Component_Class",
+      "SettingElement_Array" : [
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Classes",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Class_Internal",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Class_Private",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Class_Protected",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Class_Public",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Class_Abstract",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Class_Generic",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Class_MonoBehaviour",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Class_MonoBehaviour_Not_Obfuscatable",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Class_MonoBehaviour_Extern",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Class_MonoBehaviour_Not_Obfuscatable_Extern",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Class_ScriptableObject",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Class_Playable",
+          "Value" : "True",
+          "Values" : null
+        }
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Obfuscation_Component_Method",
+      "SettingElement_Array" : [
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Methods",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Method_Internal",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Method_Private",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Method_Protected",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Method_Public",
+          "Value" : "True",
+          "Values" : null
+        }
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Obfuscation_Component_Parameter",
+      "SettingElement_Array" : [
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Method_Parameter",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Class_Parameter",
+          "Value" : "True",
+          "Values" : null
+        }
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Obfuscation_Component_Field",
+      "SettingElement_Array" : [
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Fields",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Field_Internal",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Field_Private",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Field_Protected",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Field_Public",
+          "Value" : "True",
+          "Values" : null
+        }
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Obfuscation_Component_Property",
+      "SettingElement_Array" : [
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Properties",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Property_Internal",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Property_Private",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Property_Protected",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Property_Public",
+          "Value" : "True",
+          "Values" : null
+        }
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Obfuscation_Component_Event",
+      "SettingElement_Array" : [
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Events",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Event_Internal",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Event_Private",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Event_Protected",
+          "Value" : "True",
+          "Values" : null
+        },
+        {
+          "Type" : "Bool",
+          "Key" : "Obfuscate_Event_Public",
+          "Value" : "True",
+          "Values" : null
+        }
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Obfuscation_Component_Custom_Attributes",
+      "SettingElement_Array" : [
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Obfuscation_Component_Renaming",
+      "SettingElement_Array" : [
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Obfuscation_Component_Add_Random_Code",
+      "SettingElement_Array" : [
+        {
+          "Type" : "Bool",
+          "Key" : "Enable_Add_Random_Code",
+          "Value" : "True",
+          "Values" : null
+        }
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Obfuscation_Component_Method_ControlFlow",
+      "SettingElement_Array" : [
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Obfuscation_Component_String",
+      "SettingElement_Array" : [
+        {
+          "Type" : "Bool",
+          "Key" : "Enable_String_Obfuscation",
+          "Value" : "True",
+          "Values" : null
+        }
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Obfuscation_Component_Assembly_Suppress_ILDasm",
+      "SettingElement_Array" : [
+        {
+          "Type" : "Bool",
+          "Key" : "Enable_Assembly_Suppress_ILDasm",
+          "Value" : "True",
+          "Values" : null
+        }
+      ]
+    },
+    {
+      "Settings_Name" : "Default_Obfuscation_Component_AntiTampering",
+      "SettingElement_Array" : [
+        {
+          "Type" : "Bool",
+          "Key" : "Enable_AntiTampering_Protection",
+          "Value" : "True",
+          "Values" : null
+        }
+      ]
+    }
+  ],
+  "Version" : "5.0.5",
+  "SettingElement_Array" : [
+    {
+      "Type" : "Bool",
+      "Key" : "Global_Enable_Obfuscation",
+      "Value" : "True",
+      "Values" : null
+    }
+  ]
+}

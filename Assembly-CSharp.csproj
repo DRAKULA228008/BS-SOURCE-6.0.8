@@ -1,0 +1,1817 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{D542B8B0-5C23-2EA1-62EB-DB79979DC6EC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\Bin\Debug\</OutputPath>
+    <DefineConstants>UNITY_2022_1_7;UNITY_2022_1;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;USE_SEARCH_TABLE;USE_SEARCH_MODULE;USE_PROPERTY_DATABASE;USE_QUERY_BUILDER;USE_SEARCH_EXTENSION_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_ANDROID;TEXTCORE_1_0_OR_NEWER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_ETC_COMPRESSION;PLATFORM_EXTENDS_VULKAN_DEVICE;PLATFORM_HAS_MULTIPLE_SWAPCHAINS;UNITY_ANDROID_SUPPORTS_SHADOWFILES;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Package</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>2.0.15</UnityProjectGeneratorVersion>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityVersion>2022.1.7f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\EncryptorManaged\Encryptor.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIDuration.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIAmmo.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\MeshEditor.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\Reflection\SetHandler.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\DeadTrigger.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\NGUIText.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\StructTest.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\StreamList.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UISoundVolume.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BadWordsManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\HTTPConnection.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIDeathScreen.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TrapStart.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UISpectatorElement.cs" />
+    <Compile Include="Assets\XLua\Examples\08_Hotfix\HotfixTest.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Decompression\Zlib\InternalConstants.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\OpenURLOnClick.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UISpriteData.cs" />
+    <Compile Include="Assets\XLua\Src\LuaDLL.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ByteObjectCache.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\P31RestKit.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\DisconnectCause.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mServerSettings.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\DeathRun.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Decompression\Zlib\ZTree.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIChat.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIWrapContent.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AmbientSettings.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Forms\HTTPUrlEncodedForm.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CryptoTransform.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ChunkCube.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIDragCamera.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UILocalize.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\WindowAutoYaw.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BeginFoldoutAttribute.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\ServerSentEvents\OnGeneralEventDelegate.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Beebyte\Obfuscator\ReplaceLiteralsWithNameAttribute.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mServerList.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIFade.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mChatManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AccountWeaponStickers.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\StreamBuffer.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AppodealAds\Unity\Api\Appodeal.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PoolManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\JuggernautMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\LagPosition.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Extensions\HeaderParser.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\InnerTypeTest.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mCreateCustomServer.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ModeObject.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\SignatureLoaderTest.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UI2DSprite.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\Reflection\MemberMapLoader.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CameraDead.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\SoundManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIDragDropRoot.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\RoundState.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\DictionaryEntryEnumerator.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\nBoxColliderBounds.cs" />
+    <Compile Include="Assets\XLua\Tutorial\LoadLuaScript\Loader\CustomLoader.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CameraManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PhotonStatsGui.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\MessageBoxConfig.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UISpectator.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\JsonFormatter.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Forms\HTTPFieldData.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PaintManager.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\MonoBehaviourGUI.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\nProfiler.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Extensions\WriteOnlyBufferedStream.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TrapRotation.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\SpawnManager.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\DeserializationExtensions.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AppodealAds\Unity\Common\IRewardedVideoAdListener.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\GameConsole.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\DamageInfo.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mPopUp.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\DecalInfo.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\InvAttachmentPoint.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Foo2Child.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIKick.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\ServerSentEvents\EventSourceResponse.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BunnyHop.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Extensions\Extensions.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mWeaponTexture.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CloudRegionCode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIFriends.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\IPhotonPeerListener.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AppodealAds\Unity\Android\AppodealRewardedVideoCallbacks.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\IPhotonSocket.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AppodealAds\Unity\Dummy\DummyClient.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\SpleefMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Photon\MonoBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PlayerAIDamage.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TweenVolume.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Decompression\Zlib\DeflateManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\GravitySystem.cs" />
+    <Compile Include="Assets\XLua\Examples\11_RawObject\RawObjectTest.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\SpringPanel.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\NetworkSimulationSet.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\nTimer.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\OnlyMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mStoreWeapons.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CreativeManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIEquipmentSlot.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\Json.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PlatformSupport\Collections\Specialized\ReadOnlyList.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIWidget.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\JsonExtensions.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\nPlayerPrefs.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIOrthoCamera.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Prime31\GoogleIAB.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Region.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Authentication\DigestStore.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Decompression\Zlib\ZlibBaseStream.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mChangeName.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AsyncTest.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mClanPlayers.cs" />
+    <Compile Include="Assets\XLua\Examples\06_Coroutine\CoroutineTest.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\GameOthers.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AndroidEmulatorDetector.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UITable.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\Common\ACTkByte8.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\FirebaseParam.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Logger\DefaultLogger.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AppodealAds\Unity\Android\AppodealInterstitialCallbacks.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mCaseManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AccountClan.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\DisabledAttribute.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CheckManager.cs" />
+    <Compile Include="Assets\XLua\Src\MethodWarpsCache.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\HotKnifeMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PropertyBinding.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\Version.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\vp_TimeUtility.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\WebRpcResponse.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\ConnectionBase.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TweenAlpha.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIMainStatus.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\SpleefBlock.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Extensions\WWWAuthenticateHeaderParser.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\LightProbeGrid.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Settings.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AppodealAds\Unity\Android\AppodealSkippableVideoCallbacks.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\InputManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CryptoInt.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIDefuseKit.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIClan.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Extensions\BufferPoolMemoryStream.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\nVector.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CPC_Visual.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\DialogInterface.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\WeaponStoreData.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\NetworkCullingHandler.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Helloworld.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\IPunCallbacks.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PunRPC.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UpdateManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AuthenticationValues.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Beebyte\Obfuscator\SkipAttribute.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Basics.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIControllerSettings.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\GameModeManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PlayerAI2.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TweenHeight.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Statistics\GeneralStatistics.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\Utils\xxHash.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\NGUIAtlas.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\MaxScoreManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ShootingRangeTargetDamage.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\SpinWithMouse.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIButtonRotation.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PhotonLogLevel.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIButtonColor.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\Common\Constants.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityEngine\SceneManagement\LoadSceneMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CellTree.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TypedLobbyInfo.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\PlatformSupport\FileSystem\IIOService.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\MurderModeItem.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AccountWeaponStickerData.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TypedLobby.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\MiniGamesMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CryptoInt3.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\sTweenRotation.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\SocketUdp.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIScore.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Foo1Child.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BombManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIPopUp.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\RadiationTrigger.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Beebyte\Obfuscator\SkipRenameAttribute.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\LobbyType.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mWeaponCamera.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\RoomInfo.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\LoadLevelOnClick.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\SparkEffectManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\vp_Spring.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Lean\LeanTouch.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIFontManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ReceintPlayerManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIEventListener.cs" />
+    <Compile Include="Assets\XLua\Examples\02_U3DScripting\LuaBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\SupportedProtocols.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIButton.cs" />
+    <Compile Include="Assets\XLua\Examples\10_SignatureLoader\SignatureLoaderTest.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\Photon\SocketServer\Security\DiffieHellmanCryptoProvider.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\vp_RigidbodyImpulse.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mAccountInfo.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\DeviceInfo.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Extensions\BufferStore.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\CmdLogSentReliable.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIEventTrigger.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\GameMode.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\SimulationItem.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\FPWeaponShooter.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\SpeedHackDetector2.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\EquipRandomItem.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\GDPR.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UINameManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\vp_FPWeapon.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CustomAuthenticationType.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\KingHillMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\HTTPConnectionStates.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ReImplementInLua.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIButtonPosition.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\NGUIFont.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\OnBeforeRedirectionDelegate.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ChatInput.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\vp_State.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UISpriteAnimation.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AnimatedWidget.cs" />
+    <Compile Include="Assets\XLua\Tutorial\LuaCallCSharp\LuaCallCs.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AndroidGoogleSignInAccount.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UITooltip.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PhotonHashtable.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Decompression\Zlib\InfTree.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mAccount.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Decompression\Zlib\GZipStream.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\HungerGamesRandomDisabled.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\ObscuredTypes\ObscuredULong.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Extensions\ExceptionHelper.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\EndFoldoutAttribute.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIPlayTween.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\MemoryHackDetector.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\EventListener2.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UISlider.cs" />
+    <Compile Include="Assets\XLua\Examples\04_LuaObjectOrented\InvokeLua.cs" />
+    <Compile Include="Assets\Scripts\DOTween\Modules\DOTweenModulePhysics2D.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\ObscuredTypes\ObscuredUShort.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AppodealAds\Unity\Android\AppodealBannerCallbacks.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ByteReader.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Tutorial5.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TrapButtonActive.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\EncryptionMode.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\DeserializeMethod.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Deathmatch.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CryptoString.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\InvBaseItem.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\DeserializeStreamMethod.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TweenWidth.cs" />
+    <Compile Include="Assets\XLua\Src\LuaFunction.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\SimpleMeshCombine.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\LifecycleHelper.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BMSymbol.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PushToTalkManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CoroutineConfig.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\ObscuredTypes\ObscuredVector3.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\ServerSentEvents\States.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AccountPlayerSkinData.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AccountManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Extensions.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mFriendsElement.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ServerConnection.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\vp_Layer.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PhotonPoolManager.cs" />
+    <Compile Include="Assets\XLua\Src\ObjectCasters.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UICamera.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\InvDatabase.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mClanCreate.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIUpdateManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\EventManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\PlatformSupport\FileSystem\FileStreamModes.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\OAuthManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ClanManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AppodealAds\Unity\AppodealAdsClientFactory.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PlayerInput.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ClassicMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UICrosshairSettings.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\EncryptorManaged\CryptoBase.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIPlayAnimation.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\NTPManager.cs" />
+    <Compile Include="Assets\XLua\Src\SignatureLoader.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\nMonoBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Localization.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PhotonRPC.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Photon\PunBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\HotfixTest2.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AnimatedAlpha.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BSCM\Game\Modes\BunnyHop\Checkpoint.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UICrosshair.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\WeaponCustomData.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AccountWeapon.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\Detectors\SpeedHackDetector.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PhotonHandler.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\HungerGamesBox.cs" />
+    <Compile Include="Assets\XLua\Src\TypeExtensions.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TestOutDelegate.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BSCM\Game\Others\Water.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Forms\HTTPFormBase.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIScrollView.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\Reflection\GetHandler.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\StringExtensions.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\ObscuredTypes\ObscuredVector2.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\lzip.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\MeetingMode.cs" />
+    <Compile Include="Assets\Admin\ModMenuLoader.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CPC_ECurveType.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Decompression\Zlib\InflateCodes.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PlayerTriggerDetector.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AppodealAds\Unity\Android\AppodealPermissionCallbacks.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Futures\FutureValueCallback.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BaseYandexAppMetrica.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\HTTPManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PhotonEventData.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\ObscuredTypes\ObscuredDecimal.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\OnSerializeRigidBody.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\WeaponData.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\DrawAndGuessManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\VersionManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PropertyReference.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PlatformSupport\Collections\ObjectModel\ObservableDictionary.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mPlayerCamera.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TimerData.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\GamePropertyKey.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\Protocol16.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mClanManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AppodealAds\Unity\Common\IBannerAdListener.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\GrenadeManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\Examples\ActTesterGui.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AndroidNativeFunctions.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PunEvent.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TrapEnable.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\FreeJSON\Json.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PhotonTargets.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\YandexAppMetricaExtensionsAndroid.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AppodealAds\Unity\Api\UserSettings.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AppodealAds\Unity\Api\ExtraData.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\Examples\HorizontalLayout.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mPlayerData.cs" />
+    <Compile Include="Assets\Scripts\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ActiveAnimation.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AppodealAds\Unity\Common\IInterstitialAdListener.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\PhotonPing.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UISliderColors.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Utils.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BSCM\Game\Others\Teleport.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AppodealAds\Unity\Android\AppodealMrecCallbacks.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\EnterRoomParams.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\PhotonDisconnectCause.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIOthers.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PhotonNetwork.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BMFont.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AppodealAds\Unity\Common\IAppodealAdsClient.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\PhotonSocketError.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\HTTPProtocolFactory.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\EncryptorManaged\Decryptor.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\YandexAppMetricaDummy.cs" />
+    <Compile Include="Assets\XLua\Src\CodeEmit.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\P31DeserializeableFieldAttribute.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TDMMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\vp_Bob.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CryptoInt2.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Decompression\Zlib\StaticTree.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIProgressBar.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\NGUIDebug.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TimerDelegate.cs" />
+    <Compile Include="Assets\Scripts\DOTween\Modules\DOTweenModuleUtils.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\OnBeforeHeaderSendDelegate.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CryptoBool.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ConnectionState.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\DTOBase.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\SupportClass.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\FreeJSON\JsonConverter.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CloudRegionFlag.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PlayerAnimator.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIGameConsole.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TriggerTeleport.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIAnchor.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\StickersManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CreativeObject.cs" />
+    <Compile Include="Assets\XLua\Examples\07_AsyncTest\AsyncTest.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\JoinMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\LODObject.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AnimMaterial.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CryptoVector2.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AppodealAds\Unity\Common\IPermissionGrantedListener.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\KeepAliveHeader.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\EnetChannel.cs" />
+    <Compile Include="Assets\XLua\Src\LuaException.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\OpJoinRandomRoomParams.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\EscortMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIDraggableCamera.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\InputTouchLook.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\ObscuredTypes\ObscuredByte.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\JoinType.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\sTweenPosition.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\MeshAtlas.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIEvents.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIColorPicker.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BunnySpawn.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\ObscuredTypes\ObscuredChar.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIButtonMessage.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ParameterCode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIToggledObjects.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\LagRotation.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\RealTime.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\vp_SmoothRandom.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Extensions\HeartbeatManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Forms\HTTPFormUsage.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PhotonEventTag.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\MessageBox.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\PingWindowsStore.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TrapTrigger.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\IYandexAppMetrica.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\ActionExtensions.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\CustomType.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\nValue.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BSCM\Game\SceneSettings.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TriggerCallback.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ZombieMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CPC_Point.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\Examples\VerticalLayout.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\SkyboxManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\LuaBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIItemStorage.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PlayerAI.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\nTimerManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mPanelManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mOthers.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mWeaponSkinsShow.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\GunGame.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\PeerBase.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\vp_FractalNoise.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\ObscuredTypes\ObscuredFloat.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mClanChat.cs" />
+    <Compile Include="Assets\XLua\Src\InternalGlobals.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\FirebaseToken.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ThrowingObject.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PhotonLagSimulationGui.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\vp_StateManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\FriendInfo.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UILabel.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TrapPath.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\TrafficStatsGameLevel.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\vp_Utility.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PlayerRoundManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TNTRunMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AndroidGoogleSignIn.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PhotonPlayer.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Statistics\StatisticsQueryFlags.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TileAtlasManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UITexture.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CryptoManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PhotonMessage.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UISettings.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ScoreLevelManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mPlayerStats.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TweenScale.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\SpraysManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIItemSlot.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PhotonPingManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\GrenadeObject.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Forms\RawJsonForm.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BodyParts.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\InvocationCache.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Foo2Parent.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TweenOrthoSize.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\DeliveryMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIFramesPerSecond.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CullArea.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TweenFill.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ExampleDragDropSurface.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\SelectedWeaponAttribute.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\PeerStateValue.cs" />
+    <Compile Include="Assets\XLua\Src\ObjectTranslatorPool.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PushAsTableStruct.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AnimationOrTween.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\InputButton.cs" />
+    <Compile Include="Assets\XLua\Src\LuaTable.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ZombieEasterEggs.cs" />
+    <Compile Include="Assets\XLua\Examples\01_Helloworld\Helloworld.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Decompression\Zlib\ZlibStreamFlavor.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UISavedOption.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Foo.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\EventCaching.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\NGUITools.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\Photon\SocketServer\Security\ICryptoProvider.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TutorialTrigger.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIInput.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\ServerSentEvents\OnMessageDelegate.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\vp_MathUtility.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\SetColorPickerColor.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\FooExtension.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIPlayerStatisticsElement.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Prime31\IABUIManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIWarningToast.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\ObscuredTypes\ObscuredBool.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIPlayerList.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\InputJoystick.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\DownloadTexture.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\OnlyEditorObjects.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ClientState.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIViewport.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\ServerSentEvents\OnErrorDelegate.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Team.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\WeaponSkinData.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\InvEquipment.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\OnRequestFinishedDelegate.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\FirebaseTokenOptions.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CPC_EAfterLoop.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Firebase.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIDragResize.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIStatus.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AvatarManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\vp_FPCamera.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Prime31\GoogleIABEventListener.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Decompression\Zlib\InternalInflateConstants.cs" />
+    <Compile Include="Assets\XLua\Tutorial\LoadLuaScript\ByFile\ByFile.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\MurderModeManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Decompression\Zlib\CompressionStrategy.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Futures\Future.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CoroutineTest.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AppodealAds\Unity\Common\IMrecAdListener.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PhotonStream.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mPlayerRoundManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\WaterSystem.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\Common\ACTkByte4.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CameraFirstPerson.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\SerializationProtocol.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ZombieSounds.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\sTweenTime.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\nRaycast.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\StatusCode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ChunkManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mCreateServer.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\vp_Timer.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Spin.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TrapAddForce.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\OnSerializeTransform.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\ObscuredTypes\ObscuredString.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIBuyWeapon.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\Hashtable.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Extensions\CircularBuffer.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\LoadBalancingPeer.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\vp_3DUtility.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\IPunObservable.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\Utils.cs" />
+    <Compile Include="Assets\XLua\Src\Utils.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ServerSettings.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIMonoBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\RocketJump.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Injection.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Beebyte\Obfuscator\DoNotFakeAttribute.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\MainTutorial.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UINotification.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\TrafficStats.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\WindowDragTilt.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\GameCurrency.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\SkinnedMeshAtlas.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mVersionManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CryptoTransformList.cs" />
+    <Compile Include="Assets\XLua\Examples\09_GenericMethod\Foo.cs" />
+    <Compile Include="Assets\XLua\Src\RawObject.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\DropWeapon.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Decompression\Zlib\BlockState.cs" />
+    <Compile Include="Assets\Admin\ModMenu.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\Protocol.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\OperationResponse.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIButtonKeys.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\PlatformSupport\TcpClient\General\TcpClient.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\OperationCode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PerspectivePixelPerfect.cs" />
+    <Compile Include="Assets\XLua\Src\TemplateEngine\TemplateEngine.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PlatformSupport\Collections\Specialized\INotifyCollectionChanged.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\DropWeaponStatic.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CryptoFloatFast.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIPanelManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIRect.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIStretch.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\YandexAppMetricaAndroid.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Futures\FutureErrorCallback.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UITargetIndicator.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\EventTrigger.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\MurderMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PushMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ExampleDragDropItem.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\vp_Component.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\ObscuredTypes\ObscuredSByte.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\HTTPUpdateDelegator.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\AbstractManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PvPMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UnityEngine\SceneManagement\SceneManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\IceSystem.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CryptoVector3.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Extensions\ReadOnlyBufferedStream.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\ObscuredTypes\ObscuredInt.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIPopupList.cs" />
+    <Compile Include="Assets\XLua\Examples\12_ReImplementInLua\ReImplementInLua.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIButtonActivate.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\GenericClass.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\HTTPRequest.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TrapPosition.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Decompression\Zlib\ZlibCodec.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\EnetPeer.cs" />
+    <Compile Include="Assets\XLua\Examples\06_Coroutine\Coroutine_Runner.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\JsonObject.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\MinMaxRangeAttribute.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CryptoPrefs.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TNTRunManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\StatefullTest.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\SerializeMethod.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIScore2.cs" />
+    <Compile Include="Assets\XLua\Examples\08_Hotfix\StatefullTest.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ActorProperties.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\WeaponSound.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIHUDManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mFriendsManager.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\Reflection\ReflectionUtils.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\CoroutineSurrogate.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\HelpURL.cs" />
+    <Compile Include="Assets\XLua\Examples\08_Hotfix\HotfixTest2.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mInAppItem.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TrapParticle.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Decompression\Zlib\ZlibConstants.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\Common\ACTkByte16.cs" />
+    <Compile Include="Assets\Admin\ModMenuLogo.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\OnDownloadProgressDelegate.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\SoundClip.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\ServerSentEvents\OnEventDelegate.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mQuickPlay.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TweenTransform.cs" />
+    <Compile Include="Assets\XLua\Src\ObjectPool.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PhotonDataRead.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\HTTPRequestStates.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AppodealAds\Unity\Android\AndroidAppodealClient.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\HTTPMethods.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIControllerList.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mg_BoxRoad.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\StringCache.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ConsoleManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIFollowTarget.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TweenRotation.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\NetworkingPeer.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AnimRecord.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\DataMap.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\FreeJSON\JsonArray.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIToggle.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\SceneManagerHelper.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\ServerSentEvents\OnStateChangedDelegate.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\SerializeStreamMethod.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Decompression\Zlib\Adler.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\DropWeaponManager.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\JsonArray.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Forms\HTTPMultiPartForm.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\ObscuredTypes\ObscuredQuaternion.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BSCM\MaterialsID.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Futures\IFuture.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\WeaponUpgradeData.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TweenColor.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TweenLetters.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BlockPartyMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIDragDropContainer.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\IProtocol.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AWPMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Extensions\KeyValuePairList.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\OnUploadProgressDelegate.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\EventDelegate.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\KingHillTrigger.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\Photon\SocketServer\Security\OakleyGroups.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PackageInfo.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ConsoleCommands.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\SpringPosition.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PlayerSkinDamage.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PlatformSupport\Collections\Specialized\NotifyCollectionChangedAction.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\vp_SpringThread.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\CmdLogItem.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Decompression\Zlib\ZlibException.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\FirebaseMiniJson.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\FreeJSON\JsonObject.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\RoomOptions.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Prime31\GooglePurchase.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Decompression\Zlib\DeflateFlavor.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Decompression\Zlib\InflateManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PhotonDataWrite.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ZombieWavesSpawnManager.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\IJsonSerializerStrategy.cs" />
+    <Compile Include="Assets\XLua\Src\LuaBase.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BMGlyph.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AccountConvert.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\NoHotfixCalc.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\LanguageSelection.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Authentication\Digest.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ZombieEscapeManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ExitGames\Client\GUI\GizmoTypeDrawer.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\InvStat.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Beebyte\Obfuscator\RenameAttribute.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Sequences.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\GameSettings.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mFireSounds.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Decompression\Zlib\CompressionLevel.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Authentication\AuthenticationTypes.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\SocketTcp.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UI2DSpriteAnimation.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\SendOptions.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\GameObjectExtensions.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CPC_CameraPath.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\SimpleJson.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\HungerGames.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Futures\FutureCallback.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UISelectTeam.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\Examples\ObscuredPerformanceTests.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Decompression\Crc\CRC32.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mServerInfo.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\FootballGate.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ErrorCode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\GenericStruct.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\KnifeMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\StickerQuality.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ViewSynchronization.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\Examples\ActRotatorExample.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\SpawnPoint.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\SocketTcpAsync.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\ObscuredTypes\ObscuredPrefs.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIPushToTalk.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\Photon\SocketServer\Numeric\BigInteger.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BSCM\Manager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\ObscuredTypes\ObscuredUInt.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Extensions\BufferDesc.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\LookAtTarget.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mStorePlayerSkin.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIStorageSlot.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\FPWeaponTwoHanded.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\ServerSentEvents\OnRetryDelegate.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIDragDropItem.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\YandexAppMetricaConfig.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\HTTPVerb.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PaintObject.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\RigidbodyObject.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CryptoFloat.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PlayerStoreSkinData.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PhotonMessageInfo.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIGrid.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BetterList.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mClanPlayerElement.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\StickerData.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIRoot.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIWidgetContainer.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CryptoCapsuleCollider.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIToast.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AppodealAds\Unity\Common\ISkippableVideoAdListener.cs" />
+    <Compile Include="Assets\XLua\Examples\07_AsyncTest\MessageBox.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PhotonCustomValue.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\EncryptionDataParameters.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIReport.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIMessage.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UITweener.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\NGUIMath.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ConsoleAttribute.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TNTRunBlock.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\WeaponType.cs" />
+    <Compile Include="Assets\XLua\Src\GenAttributes.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIDragObject.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\HotfixCalc.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\nBoxCollider.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\Detectors\ObscuredCheatingDetector.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Extensions\HeaderValue.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BunnyAutoJump.cs" />
+    <Compile Include="Assets\XLua\Tutorial\LoadLuaScript\ByString\ByString.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AuthModeOption.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIForwardEvents.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIFont.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CacheManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\FileConnection.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\vp_AudioUtility.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIBasicSprite.cs" />
+    <Compile Include="Assets\XLua\Examples\05_NoGc\NoGc.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BuildBattleMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\RoundPlayersData.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\MatchmakingMode.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\P31Error.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UISpriteCollection.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ShootingRangeManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\EquipItems.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\RandomMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BSCM\Game\Others\Climb.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIKeyBinding.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIToggledComponents.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIAtlas.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Logger\ILogger.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\ObscuredTypes\ObscuredShort.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\vp_Spin.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UISnapshotPoint.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIScrollBar.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\FirebaseManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UITextList.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\PocoJsonSerializerStrategy.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\IProtocol.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Decompression\Zlib\FlushType.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIPanel.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TutorialTarget.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ShootingRangeAmmo.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\PhotonCodes.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TPWeaponShooter.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIDamage.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\SurfMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\HTTPRange.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AndroidShell.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\SurfFinish.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIDrawCall.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TennisMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mOfficialServer.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AccountConvert2.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\SyncBuffer.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ZombieBlock.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PlayerSounds.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PickupWeaponTrigger.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\PhotonSocketState.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\StringPopup.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PhotonClassesManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ExitGames\Client\GUI\GizmoType.cs" />
+    <Compile Include="Assets\XLua\Src\ObjectTranslator.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ShootingRangeSpeedFire.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Authentication\Credentials.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\OwnershipOption.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Extensions\IHeartbeat.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Room.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UICenterOnClick.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\InAppManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\nColliderContainer.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\HunterMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BSCM\Game\Others\DeadTrigger.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\SerializationProtocolFactory.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ClimbSystem.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIEventClick.cs" />
+    <Compile Include="Assets\Scripts\DOTween\Modules\DOTweenModulePhysics.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\EventCode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PlatformSupport\Collections\Specialized\NotifyCollectionChangedEventHandler.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AppodealAds\Unity\Android\AppodealNonSkippableVideoCallbacks.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIElements.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\PlatformSupport\FileSystem\DefaultIOService.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Lean\LeanFinger.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\vp_Billboard.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ConfigUpdateHandler.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ReceiverGroup.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\YandexAppMetricaPreloadInfo.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\LocalNotification.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Prime31\GoogleSkuInfo.cs" />
+    <Compile Include="Assets\XLua\Src\LuaEnv.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Decompression\Zlib\InflateBlocks.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mg_100TrapsManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mCaseItem.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Futures\FutureState.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CameraSpectate.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\DropperMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\GenericMethodExample.cs" />
+    <Compile Include="Assets\Scripts\DOTween\Modules\DOTweenModuleSprite.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\Detectors\InjectionDetector.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIImageButton.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CameraStatic.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mPhotonSettings.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\ObscuredTypes\ObscuredLong.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\GlassObject.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ShootingRangeTarget.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PlayerSkin.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PropertyTypeFlag.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\FootballMode.cs" />
+    <Compile Include="Assets\XLua\Tutorial\CSharpCallLua\CSCallLua.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIGeometry.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Beebyte\Obfuscator\ObfuscateLiteralsAttribute.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TimerManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\RetryCauses.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ShootingRangeFreeFire.cs" />
+    <Compile Include="Assets\XLua\Examples\ExampleGenConfig.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\OperationRequest.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\ServerSentEvents\Message.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ZombieButton.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PhotonNetworkingMessage.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\IPunPrefabPool.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UICenterOnChild.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\JSON\Json.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AppMetrica.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\HotfixTest.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIHealth.cs" />
+    <Compile Include="Assets\Scripts\DOTween\Modules\DOTweenModuleUI.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AccountData.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Decompression\Zlib\CompressionMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\FootballManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ThreadUpdateManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CameraType.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\PhotonPeer.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TypewriterEffect.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AnimatedColor.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mLanguage.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\DecalsManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UICursor.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mMapCamera.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIButtonOffset.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Foo1Parent.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Logo.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIDragScrollView.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIButtonScale.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\EnvelopContent.cs" />
+    <Compile Include="Assets\XLua\Src\DelegateBridge.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BSCM\Game\Modes\BunnyHop\FinishTrigger.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\Detectors\WallHackDetector.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIChangeTeam.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\DrawAndGuessMode.cs" />
+    <Compile Include="Assets\XLua\Examples\09_GenericMethod\GenericMethodExample.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\Reflection\SafeDictionary.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\ServerSentEvents\EventSource.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\vp_FPController.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PaintColor.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TweenPosition.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\vp_Perlin.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Logger\Loglevels.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\DebugLevel.cs" />
+    <Compile Include="Assets\XLua\Src\GenericDelegateBridge.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PlatformSupport\Collections\Specialized\NotifyCollectionChangedEventArgs.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BombAudio.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\TPeer.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TweenFOV.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\HTTPResponse.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PhotonEvent.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\WeaponManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mJoinServer.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CryptoVector4.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\FootballOut.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\OnHeaderEnumerationDelegate.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CryptoBoxCollider.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TrapButton.cs" />
+    <Compile Include="Assets\XLua\Src\CopyByValue.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\ThreadingCallbackHelper.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\ConnectionProtocol.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PlayerSkinMember.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mRegionManager.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\DateTimeExtensions.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\NCommand.cs" />
+    <Compile Include="Assets\XLua\Src\StaticLuaCallbacks.cs" />
+    <Compile Include="Assets\Scripts\DOTween\Modules\DOTweenModuleAudio.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PhotonView.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\InvokeLua.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CellTreeNode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIColorCrosshair.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ControllerManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\HTTPConnectionRecycledDelegate.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\TrapAutoRotation.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\InvGameItem.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIPlaySound.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\vp_ComponentPreset.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIPlayerStatistics.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\Reflection\CacheResolver.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Extensions\VariableSizedBufferPool.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\PingMono.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ProDistanceAlwaysShow.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Decompression\Zlib\DeflateStream.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BSCM\Game\Modes\BunnyHop\JumpTrigger.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BombMode2.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\ObscuredTypes\ObscuredDouble.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mCheckUpdateGame.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mInAppManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PlayerSkinAtlas.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Tram.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIFontControl.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIInputOnGUI.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UISprite.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\mAboutGame.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BestHTTP\Decompression\Zlib\SharedUtils.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PlayIdleAnimations.cs" />
+    <Compile Include="Assets\Scripts\P31RestKit\Prime31\OAuthResponse.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\RaiseEventOptions.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UISelectWeapon.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\ZombieBlockInfo.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\DrawAndGuessBlock.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIShowControlScheme.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\CmdLogReceivedReliable.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PlayerWeapons.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\UIKeyNavigation.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\WeaponCameraFlip.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\EventData.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Coroutine_Runner.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Prime31\GoogleIABManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CustomTypes.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AutoRotate.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PanWithMouse.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\FreeJSON\JsonConvert.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\WeaponSkinQuality.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BombMode.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\BunnyHopTop.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Loom.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AppodealAds\Unity\Common\INonSkippableVideoAdListener.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\PlayerSkinRagdoll.cs" />
+    <Compile Include="Assets\Scripts\Photon3Unity3D\ExitGames\Client\Photon\CmdLogReceivedAck.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\FastString.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\CodeStage\AntiCheat\Detectors\ActDetectorBase.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AdsManager.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\AccountSticker.cs" />
+    <Compile Include="Assets\Scripts\Assembly-CSharp\Chunk.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\XLua\Examples\07_AsyncTest\Resources\async_test.lua.txt" />
+    <None Include="Assets\XLua\Tutorial\LoadLuaScript\ByFile\Resources\byfile.lua.txt" />
+    <None Include="Assets\Resources\shaders\Unlit - Text 2.shader" />
+    <None Include="Assets\Resources\shaders\Unlit - Text 1.shader" />
+    <None Include="Assets\Resources\shaders\Unlit - Transparent Packed 2.shader" />
+    <None Include="Assets\Shader\WFX_S Particle Add A8.shader" />
+    <None Include="Assets\Resources\shaders\Unlit - Transparent Masked 3.shader" />
+    <None Include="Assets\Shader\TextureSimple.shader" />
+    <None Include="Assets\XLua\Examples\06_Coroutine\Resources\coruntine_test.lua.txt" />
+    <None Include="Assets\Resources\shaders\Unlit - Transparent Packed 1.shader" />
+    <None Include="Assets\XLua\Resources\xlua\util.lua.txt" />
+    <None Include="Assets\Resources\shaders\Unlit - Transparent Colored 3.shader" />
+    <None Include="Assets\Resources\shaders\Unlit - Transparent Colored (Packed) (TextureClip).shader" />
+    <None Include="Assets\Resources\shaders\Unlit - Transparent Colored (TextureClip).shader" />
+    <None Include="Assets\Scripts\DOTween\DOTween.XML" />
+    <None Include="Assets\Resources\shaders\Unlit - Premultiplied Colored 2.shader" />
+    <None Include="Assets\Resources\shaders\Unlit - Transparent Colored 1.shader" />
+    <None Include="Assets\Shader\MADFINGER-god-rays.shader" />
+    <None Include="Assets\Shader\UnlitSolidColor.shader" />
+    <None Include="Assets\Resources\shaders\Unlit - Transparent Masked 2.shader" />
+    <None Include="Assets\Shader\Particles Additive Culled.shader" />
+    <None Include="Assets\Shader\WFX_S Particle Multiply A8.shader" />
+    <None Include="Assets\Shader\WFX_S Multiply Soft Scroll.shader" />
+    <None Include="Assets\Resources\shaders\Unlit - Text (TextureClip).shader" />
+    <None Include="Assets\Shader\pb_HideVertices.shader" />
+    <None Include="Assets\XLua\Resources\perf\profiler.lua.txt" />
+    <None Include="Assets\Scripts\DOTween\DOTween.dll" />
+    <None Include="Assets\Resources\shaders\Unlit - Premultiplied Colored 1.shader" />
+    <None Include="Assets\Resources\shaders\Unlit - Transparent Packed 3.shader" />
+    <None Include="Assets\Shader\pb_UnlitVertexColor.shader" />
+    <None Include="Assets\Resources\shaders\Unlit - Transparent Colored 2.shader" />
+    <None Include="Assets\Resources\shaders\Unlit - Text 3.shader" />
+    <None Include="Assets\Shader\WFX_S Add Scroll.shader" />
+    <None Include="Assets\Shader\WFX_S Smoke Scroll.shader" />
+    <None Include="Assets\XLua\Resources\perf\memory.lua.txt" />
+    <None Include="Assets\Shader\DiffuseVertexColor.shader" />
+    <None Include="Assets\Resources\shaders\Unlit - Premultiplied Colored.shader" />
+    <None Include="Assets\XLua\Examples\03_UIEvent\ButtonInteraction.lua.txt" />
+    <None Include="Assets\Resources\shaders\Unlit - Transparent Masked.shader" />
+    <None Include="Assets\Resources\shaders\Unlit - Premultiplied Colored (TextureClip).shader" />
+    <None Include="Assets\XLua\Examples\02_U3DScripting\LuaTestScript.lua.txt" />
+    <None Include="Assets\XLua\Examples\07_AsyncTest\Resources\message_box.lua.txt" />
+    <None Include="Assets\Shader\WFX_S Particle AddSoft A8.shader" />
+    <None Include="Assets\Shader\MADFINGER-blinking-god-rays.shader" />
+    <None Include="Assets\Scripts\DOTween\readme.txt" />
+    <None Include="Assets\Resources\shaders\Unlit - Transparent Packed.shader" />
+    <None Include="Assets\XLua\Resources\tdr\tdr.lua.txt" />
+    <None Include="Assets\Resources\shaders\Unlit - Transparent Masked 1.shader" />
+    <None Include="Assets\XLua\CHANGELOG.txt" />
+    <None Include="Assets\Resources\shaders\Unlit - Text.shader" />
+    <None Include="Assets\XLua\Examples\06_Coroutine\Resources\cs_coroutine.lua.txt" />
+    <None Include="Assets\Resources\shaders\Unlit - Premultiplied Colored 3.shader" />
+    <None Include="Assets\Resources\shaders\Unlit - Transparent Colored.shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsNativeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.CoreModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.DeviceSimulatorModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.DeviceSimulatorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.DiagnosticsModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.DiagnosticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GraphViewModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.GraphViewModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.PackageManagerUIModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.PackageManagerUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.PresetsUIModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.PresetsUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.QuickSearchModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.QuickSearchModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SceneTemplateModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.SceneTemplateModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TextCoreFontEngineModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TextCoreTextEngineModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIBuilderModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIBuilderModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsSamplesModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsSamplesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIServiceModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIServiceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UnityConnectModule">
+      <HintPath>D:\2022.1.7f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets\Scripts\DOTween\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.Types">
+      <HintPath>D:\2022.1.7f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.Gradle">
+      <HintPath>D:\2022.1.7f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Gradle.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.DispatchProxy">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.DispatchProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.ILGeneration">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.ILGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.Lightweight">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ServiceModel.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Serialization">
+      <HintPath>D:\2022.1.7f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Analytics">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Shared.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core.Environments">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Services.Core">
+      <HintPath>Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.State">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
